@@ -12,4 +12,4 @@ Primeira página criada com foto no Git hub, desenvolvido nas aulas da disciplin
 * Git
 
 ## Autor
-[Fernando Leonid](https://br.linkedin.com/)
+[JV](https://br.linkedin.com/)
