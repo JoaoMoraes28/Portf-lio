@@ -2,4 +2,270 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Jura", sans-serif;
+}
+
+:root {
+    --azul_header: #13212F;
+    --azul_escuro: #495B6D;
+    --azul_claro: #7998B7;
+    --vermelho: #FF6B6B;
+    --cinza_suave: #F5F5F5;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    all: unset;
+}
+
+/* Header */
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    height: 130px;
+    z-index: 99;
+    background-color: var(--azul_header);
+}
+
+.ulHeader {
+    display: flex;
+    font-size: 13px;
+    gap: 25px;
+}
+
+/* Main */
+main {
+    padding-top: 130px;
+}
+
+
+/* Section About Me */
+.aboutMe {
+    width: 100%;
+    height: 590px;
+    line-height: 1.5;
+}
+
+.twoColors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    gap: 10px;
+    width: 100%;
+    height: 50%;
+    background-color: var(--azul_escuro);
+}
+
+.gray {
+    display: none;
+}
+
+.blue {
+    width: 100%;
+    height: 10%;
+    padding-left: 5px;
+}
+
+.blue span {
+    height: 100%;
+    font-size: 23px;
+}
+
+.imageMe {
+    width: 90%;
+    height: 70%;
+    margin-top: 10px;
+    background-color: var(--cinza_suave);
+}
+
+.text {
+    height: 50%;
+    background-color: var(--azul_claro);
+}
+
+.text h2 {
+    position: absolute;
+    top: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 45px;
+    margin-left: 10px;
+    font-size: 20px;
+    background-color: var(--vermelho);
+}
+
+.text p {
+    height: 100%;
+    padding: 7% 5% 5%;
+    font-size: 15px;
+}
+
+
+/* Section Skill */
+.skill {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    width: 100%;
+    height: 690px;
+    padding: 15px 10px 10px;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.skill h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 270px;
+    height: 45px;
+    background-color: var(--vermelho);
+}
+
+.imageText {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+    height: 70%;
+}
+
+.imageTextP {
+    height: 40%;
+}
+
+.imageText img {
+    height: 50%;
+    width: 70%;
+    background-color: var(--cinza_suave);
+}
+
+.skillP {
+    height: 24%;
+    padding-top: 5px;
+}
+
+/* Section Projects */
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1850px;
+}
+
+.myProjects {
+    width: 100%;
+    height: 70%;
+} 
+
+.myProjects h2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding-left: 15px;
+    background-color: var(--vermelho);
+}
+
+.imgProject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 80px;
+    background-color: var(--cinza_suave);
+}
+
+.imgProject div {
+    height: 3px;
+    width: 41%;
+    background-color: black;
+}
+
+.galleryProjects {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 85%;
+    background-color: var(--cinza_suave);
+}
+
+.galleryProjects img {
+    width: 100%;
+    height: 100%;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    width: 100%;
+    height: 25%;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: justify;
+}
+
+.project div {
+    width: 60%;
+    height: 50%;
+    background-color: var(--cinza_suave);
+}
+
+.project p {
+    width: 100%;
+    height: 40%;
+}
+
+.myGit {
+    height: 500px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: var(--azul_header);
+}
+
+.links {
+    padding: 10px;
+    width: 100%;
+    height: 80%;
+}
+
+.ulFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+}
+
+.ulFooter li {
+    display: flex;
+    align-items: center;
+    width: 320px;
+    gap: 10px;
+}
+
+.ulFooter img {
+    width: 25px;
 }
