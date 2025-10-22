@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kristi&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/logoFav.png" type="image/x-icon">
     <title>Meu Portfolio | João Victor Santos de Moraes</title>
 </head>
 
@@ -20,19 +21,19 @@
     <header>
         <h1>Meu Portfolio</h1>
         <ul class="ulHeader">
-            <li><a href="#">Sobre mim</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Formação e Habilidades</a></li>
+            <li><a href="#idAboutMe">Sobre mim</a></li>
+            <li><a href="#idProjects">Projetos</a></li>
+            <li><a href="#idSkill">Formação e Habilidades</a></li>
             <li><a href="#idFooter">Contatos</a></li>
         </ul>
     </header>
     <main>
-        <section class="aboutMe">
+        <section id="idAboutMe" class="aboutMe">
             <div class="twoColors">
                 <div class="blue">
                     <p>João Victor Santos de Moraes</p>
                 </div>
-                <img class="imageMe" src="" alt="">
+                <img class="imageMe" src="./img/Group 25.png" alt="">
                 <div class="gray"></div>
             </div>
             <div class="text">
@@ -45,10 +46,10 @@
                     e qualidade. Seja bem-vindo(a)!</p>
             </div>
         </section>
-        <section class="skill">
+        <section id="idSkill" class="skill">
             <h2>FORMAÇÃO E HABILIDADES</h2>
             <div class="imageText">
-                <img src="" alt="">
+                <img src="./img/skills.jpg" alt="">
                 <p class="imageTextP">Concluí o Ensino Médio – Técnico em Administração e atualmente estou cursando o
                     Técnico em Desenvolvimento de Sistemas no Institudo de Ensino SENAI, com previsão de conclusão para
                     o primeiro semestre de 2026. Durante minha formação, venho aprofundando conhecimentos em lógica de
@@ -58,7 +59,7 @@
                 aplicações web, APIs REST, manipulação de dados e interfaces interativas. Tenho experiência com HTML e
                 CSS, e linguagens como JavaScript e Java, além de ferramentas como Figma e Git/GitHub.</p>
         </section>
-        <section class="projects">
+        <section id="idProjects" class="projects">
             <div class="myProjects">
                 <h2>PRINCIPAIS PROJETOS</h2>
                 <div class="imgProject">
@@ -69,43 +70,44 @@
                 <div class="galleryProjects">
                     <div class="project">
                         <div>
-                            <img src="" alt="">
+                            <img src="./img/zooMania.png" alt="">
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
+                        <p>
+                            ZooMania é um projeto integrado com duas API's. Ele
+                            oferece uma experiência rica e acessível para explorar milhares de espécies animais
                         </p>
                     </div>
                     <div class="project">
                         <div>
-                            <img src="" alt="">
+                            <img src="./img/zapZap.png" alt="">
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
+                        <p>
+                            (EM ANDAMENTO) Cópia do WhatsApp Web feita com HTML, CSS e JavaScript. Nele é utilizado uma API feita por mim mesmo, 
+                            na qual simula um banco de dados com usuários, perfis e mensagens. Esta API é consumida para preencher
+                            o conteúdo deste web-site.
                         </p>
                     </div>
                     <div class="project">
                         <div>
-                            <img src="" alt="">
+                            <img src="./img/javaRedes.png" alt="">
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
+                        <p>
+                            Interface para se calcular sub-redes de IP estruturada em JAVA. Esta calculadora possui diversos tratamentos 
+                            de IP para garantir a precisão de seus resultados.
                         </p>
                     </div>
                     <div class="project">
                         <div>
-                            <img src="" alt="">
+                            <img src="./img/apiFilme.png" alt="">
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
+                        <p>
+                            (EM ANDAMENTO) Esta API conta com diversas funções de manipulação de dados de um banco conténdo múltiplas tabelas, como por exemplo, busca por ID, delete, 
+                            Update e Insert (CRUD).
                         </p>
                     </div>
                 </div>
             </div>
-            <img class="myGit" src="./img/Captura de tela 2025-10-18 195130.png" alt="">
+            <img class="myGit" src="./img/myGit.png" alt="">
         </section>
     </main>
     <footer id="idFooter">
@@ -121,16 +123,16 @@
                 </li>
                 <li>
                     <img src="./img/linkLog.png" alt="">
-                    <span>Linkedin</span>
+                    <a href="">Linkedin</a>
                 </li>
                 <li>
                     <img src="./img/githubLog.png" alt="">
-                    <span>GitHub</span>
+                    <a href="https://github.com/JoaoMoraes28">GitHub</a>
                 </li>
             </ul>
         </div>
         <div class="credits">
-            <img src="./img/gmailLog.png" alt="">
+            <img src="./img/jvLogo.png" alt="">
             <span>© João Victor Santos de Moraes</span>
         </div>
     </footer>

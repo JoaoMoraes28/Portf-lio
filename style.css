@@ -5,6 +5,7 @@
     font-family: "Jura", sans-serif;
 }
 
+/* Cores bases */
 :root {
     --azul_header: #13212F;
     --azul_escuro: #495B6D;
@@ -20,6 +21,10 @@ ul {
 
 a {
     all: unset;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -64,6 +69,7 @@ main {
     height: 590px;
     line-height: 1.5;
     color: white;
+    scroll-margin-top: 130px;
 }
 
 .twoColors {
@@ -97,6 +103,8 @@ main {
     height: 70%;
     margin-top: 10px;
     background-color: var(--cinza_suave);
+    border-style: solid;
+    border-color: var(--azul_header);
 }
 
 .text {
@@ -137,6 +145,7 @@ main {
     line-height: 1.5;
     font-size: 15px;
     text-align: justify;
+    scroll-margin-top: 130px;
 }
 
 .skill h2 {
@@ -179,6 +188,7 @@ main {
     align-items: center;
     width: 100%;
     height: 1850px;
+    scroll-margin-top: 130px;
 }
 
 .myProjects {
@@ -241,7 +251,8 @@ main {
 .project div {
     width: 60%;
     height: 50%;
-    background-color: var(--cinza_suave);
+    border-style: solid;
+    border-color: var(--azul_header);
 }
 
 .project p {
@@ -304,6 +315,7 @@ footer {
     height: 15px;
 }
 
+/* Responsividade para tablet */
 @media (min-width: 768px) {
 
     /* Header */
@@ -329,8 +341,8 @@ footer {
 
     .imageMe {
         position: absolute;
-        width: 450px;
-        height: 220px;
+        width: 55%;
+        height: 20%;
         top: 210px;
     }
 
@@ -444,6 +456,7 @@ footer {
     }
 }
 
+/* Responsividade para Max Tablet */
 @media (min-width: 1024px) {
 
     /* Header */
@@ -451,6 +464,12 @@ footer {
         font-size: 16px;
         gap: 150px;
         margin-bottom: 10px;
+    }
+
+    .ulHeader li:hover {
+        background-color: #ff6b6b54;
+        border-radius: 10px;
+        transition: 0.4s ease;
     }
 
     /* Section About Me */
@@ -485,6 +504,10 @@ footer {
         width: 75%;
     }
 
+    .project div {
+        height: 75%;
+    }
+
     .myGit {
         width: 24%;
         height: 40%;
@@ -498,5 +521,91 @@ footer {
     .ulFooter {
         padding-top: 50px;
         flex-wrap: nowrap;
+    }
+
+    .ulFooter li:hover {
+        color: var(--vermelho);
+        transition: 0.3s ease;
+    }
+}
+
+/* Responsividade para desktop */
+@media (min-width: 1280px) {
+
+    /* Section About Me */
+    .imageMe {
+        width: 45%;
+        height: 30%;
+    }
+
+    .text h2 {
+        right: 410px;
+    }
+
+    /* Section Projects */
+    .project div {
+        height: 85%;
+    }
+}
+
+/* Responsividade para Max desktop */
+@media (min-width: 1910px) {
+
+    /* Header */
+    .ulHeader {
+        gap: 260px;
+    }
+
+    /* Section About Me */
+    .aboutMe {
+        padding: 20px 200px 0px 200px;
+    }
+
+    .imageMe {
+        width: 40%;
+        height: 25%;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+
+    .text h2 {
+        right: 660px;
+    }
+
+     /* Section Skill */
+    .skill {
+        padding: 20px 200px 0px 200px;
+    }
+
+    .skillP {
+        font-size: 16px;
+    }
+
+    .imageTextP {
+        font-size: 16px;
+    }
+
+     /* Section Projects */
+    .projects {
+        padding: 20px 200px 0px 200px;
+    }
+
+    .project div {
+        width: 40%;
+        height: 85%;
+        background-color: var(--cinza_suave);
+    }
+
+    .project p {
+        width: 100%;
+        height: 40%;
+        font-size: 16px;
+    }
+
+    .myGit {
+        width: 20%;
+        height: 50%;
     }
 }
