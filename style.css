@@ -22,11 +22,6 @@ a {
     all: unset;
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-}
-
 /* Header */
 header {
     position: fixed;
@@ -38,7 +33,6 @@ header {
     width: 100%;
     height: 130px;
     z-index: 99;
-    color: #bdbdbd;
     background-color: var(--azul_header);
 }
 
@@ -46,12 +40,16 @@ header h1 {
     font-family: "Kristi";
     font-size: 55px;
     font-weight: 500;
+    color: white;
 }
 
 .ulHeader {
     display: flex;
-    font-size: 13px;
-    gap: 25px;
+    justify-content: center;
+    width: 100%;
+    font-size: 12px;
+    gap: 20px;
+    color: #bdbdbd;
 }
 
 /* Main */
@@ -149,18 +147,18 @@ main {
     width: 270px;
     height: 45px;
     background-color: var(--vermelho);
+    color: white;
 }
 
 .imageText {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    gap: 20px;
     height: 70%;
 }
 
 .imageTextP {
-    height: 40%;
+    height: 50%;
 }
 
 .imageText img {
@@ -171,7 +169,7 @@ main {
 
 .skillP {
     height: 24%;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 /* Section Projects */
@@ -195,6 +193,7 @@ main {
     height: 70px;
     padding-left: 15px;
     background-color: var(--vermelho);
+    color: white;
 }
 
 .imgProject {
@@ -273,6 +272,7 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 80%;
     gap: 25px;
 }
 
@@ -309,6 +309,11 @@ footer {
     /* Header */
     .ulHeader {
         gap: 80px;
+    }
+
+    .ulHeader {
+        font-size: 15px;
+        gap: 110px;
     }
 
     /* Section About Me */
@@ -365,15 +370,16 @@ footer {
 
     /* Section skill */
     .skill {
-        padding-left: 5%;
-        width: 90%;
-        gap: 20px;
+        padding-left: 2%;
+        width: 97%;
+        gap: 10px;
         margin-top: 40px;
         height: 400px;
     }
 
     .imageText {
         flex-direction: row;
+        gap: 20px;
         width: 100%;
         height: 50%;
     }
@@ -412,6 +418,7 @@ footer {
 
     .myGit {
         width: 34%;
+        height: 50%;
     }
 
     .galleryProjects {
@@ -426,5 +433,70 @@ footer {
 
     .project p {
         height: 100%;
+    }
+
+    /* Footer */
+    .ulFooter {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 10%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* Header */
+    .ulHeader {
+        font-size: 16px;
+        gap: 150px;
+        margin-bottom: 10px;
+    }
+
+    /* Section About Me */
+    .aboutMe {
+        padding: 20px 100px 0px 100px;
+    }
+
+    .imageMe {
+        top: 215px;
+    }
+
+    .text h2 {
+        top: 155px;
+        right: 320px;
+    }
+
+    /* Section Skill */
+    .skill {
+        padding: 20px 100px 0px 100px;
+    }
+
+    .imageText img {
+        width: 30%;
+    }
+
+    /* Section Projects */
+    .projects {
+        padding: 20px 100px 0px 100px;
+    }
+
+    .myProjects {
+        width: 75%;
+    }
+
+    .myGit {
+        width: 24%;
+        height: 40%;
+    }
+
+    /* Footer  */
+    footer {
+        height: 190px;
+    }
+
+    .ulFooter {
+        padding-top: 50px;
+        flex-wrap: nowrap;
     }
 }
