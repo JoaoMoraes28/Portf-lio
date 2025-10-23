@@ -81,6 +81,7 @@ main {
     width: 100%;
     height: 50%;
     background-color: var(--azul_escuro);
+    transition: 0.5s ease;
 }
 
 .gray {
@@ -258,6 +259,15 @@ main {
 .project p {
     width: 100%;
     height: 40%;
+}
+
+.project p a {
+    font-weight: 600;
+    color: var(--azul_escuro);
+}
+
+.project p a:hover {
+    color: var(--vermelho);
 }
 
 .myGit {
