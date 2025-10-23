@@ -488,6 +488,8 @@ footer {
     }
 
     .imageMe {
+        width: 45%;
+        height: 17%;
         top: 215px;
     }
 
@@ -537,6 +539,16 @@ footer {
         color: var(--vermelho);
         transition: 0.3s ease;
     }
+}
+
+@media (width: 1024px) and (max-height: 600px) {
+    /* Section About Me */
+    .imageMe {
+        width: 45%;
+        height: 37%;
+        top: 215px;
+    }
+
 }
 
 /* Responsividade para desktop */
