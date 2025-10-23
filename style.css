@@ -96,6 +96,7 @@ main {
 
 .blue p {
     height: 100%;
+    padding-left: 15px;
     font-size: 23px;
 }
 
@@ -370,6 +371,7 @@ footer {
 
     .blue p {
         padding-top: 15px;
+        padding-left: 30px;
     }
 
     .text {
@@ -551,6 +553,20 @@ footer {
 
 }
 
+@media (width: 1272px) {
+    /* Section About Me */
+    .imageMe {
+        width: 45%;
+        height: 37%;
+        top: 215px;
+    }
+
+    .text h2 {
+        right: 400px;
+    }
+}
+
+
 /* Responsividade para desktop */
 @media (min-width: 1280px) {
 
@@ -558,6 +574,10 @@ footer {
     .imageMe {
         width: 45%;
         height: 30%;
+    }
+
+    .blue p {
+        padding-left: 60px;
     }
 
     .text h2 {
